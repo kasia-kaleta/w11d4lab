@@ -22,4 +22,10 @@ public class DeckTest {
     public void canGetCards(){
         assertEquals(0, newDeck.getCardsSize());
     }
+
+    @Test
+    public void canInitializeDeck(){
+        newDeck.initializeDeck();
+        assertEquals(52, newDeck.getCardsSize());
+    }
 }
