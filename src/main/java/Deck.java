@@ -40,4 +40,8 @@ public class Deck {
     public void shuffleDeck(){
         Collections.shuffle(this.cards);
     }
+
+    public Card dealCard(){
+        return this.cards.remove(0);
+    }
 }

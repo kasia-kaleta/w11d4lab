@@ -62,5 +62,11 @@ public class DeckTest {
 
     }
 
+    @Test
+    public void canDealCard(){
+        newDeck.initializeDeck();
+        newDeck.dealCard();
+        assertEquals(51, newDeck.getCardsSize());
+    }
 
 }
