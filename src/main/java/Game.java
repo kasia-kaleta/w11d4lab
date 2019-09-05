@@ -5,10 +5,8 @@ public class Game {
         deck.initializeDeck();
         deck.shuffleDeck();
 
-        Card p1card;
-        Card p2card;
-        p1card = deck.dealCard();
-        p2card = deck.dealCard();
+        Card p1card = deck.dealCard();
+        Card p2card = deck.dealCard();
 
         String result;
         if (p1card.getValueFromEnum() > p2card.getValueFromEnum()){
